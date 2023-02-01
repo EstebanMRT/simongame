@@ -64,7 +64,7 @@ function nextsequence() {
 //Fonction qui permet de jouer un son suivant si c'est le jeu ou le joueurs qui clique
 function playSound(name) {
 
-    var audio = new Audio("/sounds/" + name + ".mp3");
+    var audio = new Audio("simongame/sounds/" + name + ".mp3");
     audio.play();
 
 };
@@ -94,7 +94,7 @@ function checkAnswer(currentLevel) {
         $('body').removeClass("game-over");
     }, 200);
 
-    var wrong = new Audio("/sounds/wrong.mp3");
+    var wrong = new Audio("simongame/sounds/wrong.mp3");
     wrong.play();
 
     $("#level-title").text("GAME OVER, press any key to restart");
